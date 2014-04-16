@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="docs-assets/ico/favicon.png">
+
+    <title>Dashboard Admin</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/style.css" rel="stylesheet">
+
+  </head>
+
+  <body>  
+   
+    <div class="container">
+      <br>
+      <br>
+      <br>
+      <div class="page-header">
+          <h1>Administrador</h1>
+        </div>
+      <div class="tab-content">
+            <div class="tab-pane active" id="tabs-basic">
+              <div class="tabbable">
+                <ul class="nav nav-tabs">
+                  <li class="active"><a href="#tabs1-pane1" data-toggle="tab">Altas</a></li>
+                  <li><a href="#tabs1-pane2" data-toggle="tab">Bajas</a></li>
+                  <li><a href="#tabs1-pane3" data-toggle="tab">Cambios</a></li>
+                </ul>
+                <div class="tab-content">
+                  <div class="tab-pane active" id="tabs1-pane1">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <h4>Registrar usuario</h4>
+            		                <div class="formulario">
+                                  <form id="insertform">
+                                    <div class="form-group">
+                                      <label for="insertname">Nombre: </label>
+                                      <input type="text" class="form-control" id="insertname" placeholder="Nombre">
+
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="insertpassword">Password</label>
+                                      <input type="password" class="form-control" id="insertpassword" placeholder="Password">
+
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="insertemail">Email</label>
+                                      <input type="text" class="form-control" id="insertemail" placeholder="E-mail">
+
+                                    </div>
+              					           <div class="form-group">
+                                      <label for="insertpriv">Privilegio</label>
+                                      <input type="text" class="form-control" id="insertpriv" placeholder="Tipo de usuario">
+
+                                    </div>
+            					           </div>
+            					  
+                                  <button class="btn btn-success btn-large" id="registrar">Registrar</button>
+                                  </form>	
+                                  </div>
+                    </div>
+                    
+                  </div>
+				  <!-- content tab1 -->
+                  <div class="tab-pane" id="tabs1-pane2">
+				  <div class="row">
+					 <h4>Obtener usuarios</h4>
+						<button class="btn btn-danger btn-large" id="getusers">Usuarios</button>
+						<div class="col-md-7">
+						<table class="table table-striped" id="result">
+						<!-- Cabecera de la tabla -->
+						<thead>
+							<tr>
+                <th>Id</th>
+								<th>Nombre</th>
+								<th>Email</th>
+								<th>&nbsp;</th>
+							</tr>
+						</thead>
+						<tbody>
+						</tbody>
+						</table>
+						</div>
+						<div class="col-md-5">
+						<div class="formuser"></div>
+						</div>						
+                    </div>
+					</div>
+					<!-- content ta2 -->	
+                  <div class="tab-pane" id="tabs1-pane3">
+					<div class="row">
+						  <h4>Obtener usuarios</h4>
+								<button class="btn btn-danger btn-large" id="getusers">Usuarios</button>
+								<div class="col-md-7">
+								<table class="table table-striped" id="xml">
+								<!-- Cabecera de la tabla -->
+								<thead>
+									<tr>
+                    <th>Index</th>
+										<th>Nombre</th>
+										<th>Email</th>
+										<th>&nbsp;</th>
+									</tr>
+								</thead>
+								<tbody>
+									
+								</tbody>
+								</table>
+								</div>
+								<div class="col-md-5">
+								<div class="formulariom" style="display:none;">
+							  <div class="form-group">
+								<label for="modificarnombre">Nombre: </label>
+								<input type="text" class="form-control" id="modificarnombre" placeholder="Nombre">
+							  </div>
+							  <div class="form-group">
+								<label for="modificarpassword">Password</label>
+								<input type="password" class="form-control" id="modificarpassword" placeholder="Password">
+							  </div>
+							  <div class="form-group">
+								<label for="modificaremail">Email</label>
+								<input type="text" class="form-control" id="modificaremail" placeholder="E-mail">
+							  </div>
+							  <button class="btn btn-success btn-large" id="modif">Modificar</button>
+							  </div>
+                                                                    
+								</div>
+					</div>
+                  </div>
+                  <!-- content tab3 -->
+                </div><!-- /.tab-content -->
+              </div><!-- /.tabbable -->
+            </div><!-- .tabs-basic -->
+		</div><!-- .tabs -->
+
+     
+
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="dist/js/admin.js"></script>
+    
+    
+  </body>
+</html>
